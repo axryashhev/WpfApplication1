@@ -1,0 +1,28 @@
+﻿<Page x:Class="WpfApplication1.QuestionOne"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:WpfApplication1"
+      mc:Ignorable="d"
+      Title="QuestionOne" Height="450" Width="800">
+    <Grid ShowGridLines="True">
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Name="ViewLabel"/>
+                <TextBlock Margin="10, 0" Name="ViewData1"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <ComboBox Margin="10, 0" SelectedIndex="0" SelectionChanged="ComboBox_Selected">
+                    <TextBlock>мужской</TextBlock>
+                    <TextBlock>женский</TextBlock>
+                </ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <StackPanel>
+                    <Button Click="NextView">next</Button>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>
